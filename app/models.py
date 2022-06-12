@@ -8,7 +8,7 @@ class UserData(models.Model):
     name = models.CharField(max_length=50, default= None)
     age= models.IntegerField(default= None)
     sex= models.CharField(max_length=20, default= None)
-    address= models.CharField(max_length=50, default= None)
+    address= models.CharField(max_length=100, default= None)
     pincode=models.CharField(max_length=6, default= None)
     mobile_number= models.PositiveBigIntegerField(default= None)
     landline_number= models.CharField(max_length=10, default= None)

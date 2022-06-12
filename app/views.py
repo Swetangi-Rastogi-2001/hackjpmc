@@ -49,8 +49,24 @@ def profiling_attempt(request):
         return render(request, 'Profiling.html', {"form":form})
 
 
-def display_gender(request):
-    data = models.UserData.objects.filter(sex="Female", cruthces ="Yes")
+def female(request):
+    data = models.UserData.objects.filter(sex="Female")
     return render(request, "display.html", {"data":data})
+
+def male(request):
+    data = models.UserData.objects.filter(sex="Male")
+    return render(request, "display.html", {"data":data})
+
+
+def female_cruthces(request):
+    data = models.UserData.objects.filter(sex="Female", cruthces="Yes")
+    return render(request, "display.html", {"data":data})
+
+def male_cruthces(request):
+    data = models.UserData.objects.filter(sex="Male", cruthces= "Yes")
+    return render(request, "display.html", {"data":data})
+
+
+
 
         

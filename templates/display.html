@@ -26,8 +26,7 @@
                 <td>{{details.mobile_number}}</td>
                 <td>{{details.sex}}</td>
                 <td>{{details.hands}}</td>
-                s= f{'https://wa.me/91'+ {{details.mobile_number}}}
-                <td> ''+s </td>
+                <td> <a href="{{details.link}}{{details.mobile_number}}">Link to Chat</a>  </td>
             </tr>
             {% endfor %}
         </table>
