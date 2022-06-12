@@ -18,7 +18,8 @@
     <div class="center">
       <h4>Profiling Survey</h4>
       
-      <form method="post">
+      <form method="POST" action="">
+        {% csrf_token %}
         <div class="to_display_data">
           <label> Select Age Group</label>
         </div>
@@ -84,69 +85,69 @@
         <div class="prosthetic">
           
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Wheelchair" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" name="checks[]" value="1" id="flexCheckDefault">
             <label class="form-check-label" >
              Wheelchair
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Tricycle" id="flexCheckChecked">
+            <input class="form-check-input" type="checkbox" name="checks[]" value="2" id="flexCheckChecked">
             <label class="form-check-label" >
               Tricycle
             </label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Cruthces" id="flexCheckChecked">
+            <input class="form-check-input" type="checkbox" name="checks[]" value="3" id="flexCheckChecked">
             <label class="form-check-label" >
               Cruthces
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Hearing Aid" id="flexCheckChecked" >
+            <input class="form-check-input" type="checkbox" name="checks[]" value="4" id="flexCheckChecked" >
             <label class="form-check-label" >
               Hearing Aid
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Hands" id="flexCheckChecked" >
+            <input class="form-check-input" type="checkbox" name="checks[]" value="5" id="flexCheckChecked" >
             <label class="form-check-label" >
               Hands
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input " type="checkbox" name="Above Knee Jaipur Foot" id="flexCheckChecked" >
+            <input class="form-check-input " type="checkbox" name="checks[]"  value="6" id="flexCheckChecked" >
             <label class="form-check-label" >
               Above Knee Jaipur Feet
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Below Knee Jaipur Foot" id="flexCheckChecked" >
+            <input class="form-check-input" type="checkbox" name="checks[]" value="7" id="flexCheckChecked" >
             <label class="form-check-label" >
               Below Knee Jaipur Feet
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Ratnanidhi Key" id="flexCheckChecked" >
+            <input class="form-check-input" type="checkbox" name="checks[]" value="8" id="flexCheckChecked" >
             <label class="form-check-label" >
               Ratnanidhi Key
             </label>
           </div>
           
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="L S Belt" id="flexCheckChecked" >
+            <input class="form-check-input" type="checkbox" name="checks[]" value="9" id="flexCheckChecked" >
             <label class="form-check-label" >
               L S Belt
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Knee Cap" id="flexCheckChecked" >
+            <input class="form-check-input" type="checkbox" name="checks[]" value="10" id="flexCheckChecked" >
             <label class="form-check-label">
               Knee Cap
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Soft Collor" id="flexCheckChecked" >
+            <input class="form-check-input" type="checkbox" name="checks[]" value="11" id="flexCheckChecked" >
             <label class="form-check-label" >
               Soft Collor
             </label>

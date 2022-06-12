@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta  charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        
+        <title> Display</title>        
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>pk</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+                <th>Prosthetic</th>
+                <th>Link</th>
+            </tr>
+        
+            {% for details in data %}
+            <tr>
+                <td>{{details.pk}}</td>
+                <td>{{details.name}}</td>
+                <td>{{details.age}}</td>
+                <td>{{details.mobile_number}}</td>
+                <td>{{details.sex}}</td>
+                <td>{{details.hands}}</td>
+                s= f{'https://wa.me/91'+ {{details.mobile_number}}}
+                <td> ''+s </td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+    </body>
+</html>

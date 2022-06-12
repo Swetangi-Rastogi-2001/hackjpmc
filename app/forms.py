@@ -29,7 +29,9 @@ class UserInputDataForm(forms.Form):
 
 
 class CheckConditions(forms.Form):
-    age= forms.IntegerField()
+    youth_age= forms.IntegerField()
+    middle_age= forms.IntegerField()
+    elderly_age= forms.IntegerField()
     sex= forms.CharField(max_length=20)
     maritial_status= forms.CharField(max_length= 10)
     wheelchair = forms.CharField(max_length=10)
@@ -37,8 +39,12 @@ class CheckConditions(forms.Form):
     cruthces=forms.CharField(max_length=10)
     hearing_aids= forms.CharField(max_length=10)
     hands=forms.CharField(max_length=10)
+    above_knee_jaipur_foot= forms.CharField(max_length=20)
+    below_knee_jaipur_foot= forms.CharField(max_length=20)
+    ratnanidhi_leg= forms.CharField(max_length=20)
     ls_belt= forms.CharField(max_length=10)
     knee_cap= forms.CharField(max_length=10)
     soft_collor= forms.CharField(max_length=10)
+    message= forms.CharField(max_length=750)
 
 

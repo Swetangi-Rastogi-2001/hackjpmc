@@ -1,6 +1,7 @@
 from django.db import models
 
 class UserData(models.Model):
+        
     project = models.CharField(max_length=100, default= None)
     enrollment_date = models.DateField(default= None)
     distribution_date = models.DateField(default= None)
@@ -25,3 +26,6 @@ class UserData(models.Model):
     soft_collor= models.CharField(max_length=10, default= None)
     maritial_status= models.CharField(max_length= 10, default= None, null= True)
     educational_background= models.CharField(max_length= 25, default= None, null= True)
+    link= models.CharField(max_length= 30, default= 'https://wa.me/91')
+
+    

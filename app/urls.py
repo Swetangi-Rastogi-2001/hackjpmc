@@ -6,4 +6,5 @@ app_name='app'
 urlpatterns=[
     path('', views.Home, name='home'),
     path('profiling/', views.profiling_attempt, name='profiling_attempt'),
+    path('display/', views.display_gender, name='display_gender'),
 ]
